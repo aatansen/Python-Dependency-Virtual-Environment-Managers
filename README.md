@@ -5,10 +5,12 @@
 # **Context**
 - [**Context**](#context)
   - [**Top-Tier (Most Versatile \& Recommended)**](#top-tier-most-versatile--recommended)
-    - [**uv**](#uv)
-      - [Installation](#installation)
-      - [Usage](#usage)
+    - [**UV**](#uv)
+      - [UV Installation](#uv-installation)
+      - [UV Usage](#uv-usage)
     - [**poetry**](#poetry)
+      - [Poetry Installation](#poetry-installation)
+      - [Poetry Usage](#poetry-usage)
     - [**pyenv-virtualenv**](#pyenv-virtualenv)
     - [**pipx**](#pipx)
   - [**Mid-Tier (Popular \& Well-Supported)**](#mid-tier-popular--well-supported)
@@ -23,13 +25,13 @@
 
 ## **Top-Tier (Most Versatile & Recommended)**
 
-### **uv**
+### **UV**
 
 - Fastest package installer and virtual environment manager.
 
 [⬆️ Go to Context](#context)
 
-#### Installation
+#### UV Installation
 
 - Using [`pip`](https://pypi.org/project/uv/)
 
@@ -47,7 +49,7 @@
 
 [⬆️ Go to Context](#context)
 
-#### Usage
+#### UV Usage
 
   ```sh
   uv venv --python 3.11.6  # Create venv with a specific Python version
@@ -60,6 +62,21 @@
 ### **poetry**
 
 - Full-fledged dependency and package manager.
+
+#### Poetry Installation
+
+```sh
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+#### Poetry Usage
+
+```sh
+poetry new myproject  # Create a new project
+cd myproject
+poetry install  # Install dependencies
+poetry add requests  # Add a package
+```
 
 ### **pyenv-virtualenv**
 
