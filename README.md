@@ -55,6 +55,7 @@
   uv venv --python 3.11.6  # Create venv with a specific Python version
   uv pip install requests  # Install a package
   uv pip list  # List installed packages
+  uv run app.py # to run py file
   ```
 
 [⬆️ Go to Context](#context)
