@@ -52,6 +52,8 @@
 #### UV Usage
 
   ```sh
+  uv venv   # Creates a .venv in the current directory
+  uv venv my_environment # Creates a venv named my_environment
   uv venv --python 3.11.6  # Create venv with a specific Python version
   uv pip install requests  # Install a package
   uv pip list  # List installed packages
