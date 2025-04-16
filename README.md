@@ -8,6 +8,7 @@
     - [**UV**](#uv)
       - [UV Installation](#uv-installation)
       - [UV Usage](#uv-usage)
+      - [More UV Commands](#more-uv-commands)
     - [**poetry**](#poetry)
       - [Poetry Installation](#poetry-installation)
       - [Poetry Usage](#poetry-usage)
@@ -58,6 +59,57 @@
   uv pip install requests  # Install a package
   uv pip list  # List installed packages
   uv run app.py # to run py file
+  ```
+
+#### More UV Commands
+
+- Sync environment exactly to a requirements file (*installs missing, removes extra*)
+
+  ```sh
+  uv pip sync requirements.txt
+  ```
+
+- Initialize a new project (*creates `pyproject.toml`*)
+
+  ```sh
+  uv init
+  ```
+
+- Add dependencies to `pyproject.toml` and install/sync them
+
+  ```sh
+  uv add flask requests
+  ```
+
+- Add a development dependency
+
+  ```sh
+  uv add --group dev pytest
+  ```
+
+- Remove a dependency
+
+  ```sh
+  uv remove requests
+  ```
+
+- Create/update the `uv.lock` file based on `pyproject.toml`
+
+  ```sh
+  uv lock
+  ```
+
+- Install dependencies into the `venv` based on `uv.lock` (*like `uv pip sync`*)
+
+  ```sh
+  uv sync
+  ```
+
+- Converting `requirements.txt` to `pyproject.toml`
+
+  ```sh
+  uv init
+  uv add -r requirements.txt
   ```
 
 [⬆️ Go to Context](#context)
