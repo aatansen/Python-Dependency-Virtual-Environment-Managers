@@ -112,6 +112,12 @@
   uv add -r requirements.txt
   ```
 
+- Display Dependency Tree
+
+  ```sh
+  uv tree
+  ```
+
 [⬆️ Go to Context](#context)
 
 ### **poetry**
