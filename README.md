@@ -9,6 +9,7 @@
       - [UV Installation](#uv-installation)
       - [UV Usage](#uv-usage)
       - [More UV Commands](#more-uv-commands)
+      - [Minimal `requirements.txt`](#minimal-requirementstxt)
     - [**poetry**](#poetry)
       - [Poetry Installation](#poetry-installation)
       - [Poetry Usage](#poetry-usage)
@@ -116,6 +117,40 @@
 
   ```sh
   uv tree
+  ```
+
+[⬆️ Go to Context](#context)
+
+#### Minimal `requirements.txt`
+
+- Install [pipdeptree](https://pypi.org/project/pipdeptree/)
+
+  ```sh
+  uv pip install pipdeptree
+  ```
+
+- Run the command to generate indented `requirements.txt`
+
+  ```sh
+  pipdeptree -f > requirements.txt
+  ```
+
+- Package can be excluded
+
+  ```sh
+  pipdeptree --exclude pip,pipdeptree,setuptools,wheel,build,packaging,pyproject_hooks -f > requirements.txt
+  ```
+
+- Minimal only main package `requirements.txt`
+
+  ```sh
+  pipdeptree --warn silence | grep -E "^[a-zA-Z0-9]" | awk '{print $1}' > requirements.txt
+  ```
+
+- Combined exclude and minimal command
+
+  ```sh
+  pipdeptree --exclude pip,pipdeptree,setuptools,wheel,build,packaging,pyproject_hooks  --warn silence | grep -E "^[a-zA-Z0-9]" | awk '{print $1}' > requirements.txt
   ```
 
 [⬆️ Go to Context](#context)
