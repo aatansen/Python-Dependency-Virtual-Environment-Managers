@@ -13,6 +13,7 @@
     - [**poetry**](#poetry)
       - [Poetry Installation](#poetry-installation)
       - [Poetry Usage](#poetry-usage)
+      - [More Poetry Commands](#more-poetry-commands)
     - [**pyenv-virtualenv**](#pyenv-virtualenv)
     - [**pipx**](#pipx)
   - [**Mid-Tier (Popular \& Well-Supported)**](#mid-tier-popular--well-supported)
@@ -165,6 +166,14 @@
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
+Using pip
+
+```sh
+pip install poetry
+```
+
+[⬆️ Go to Context](#context)
+
 #### Poetry Usage
 
 ```sh
@@ -174,9 +183,23 @@ poetry install  # Install dependencies
 poetry add requests  # Add a package
 ```
 
+[⬆️ Go to Context](#context)
+
+#### More Poetry Commands
+
+- Show install packages
+
+  ```sh
+  poetry show
+  ```
+
+[⬆️ Go to Context](#context)
+
 ### **pyenv-virtualenv**
 
 - Best for managing multiple Python versions and virtual environments.
+
+[⬆️ Go to Context](#context)
 
 ### **pipx**
 
