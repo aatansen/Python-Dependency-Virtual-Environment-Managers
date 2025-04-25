@@ -176,12 +176,41 @@ pip install poetry
 
 #### Poetry Usage
 
-```sh
-poetry new myproject  # Create a new project
-cd myproject
-poetry install  # Install dependencies
-poetry add requests  # Add a package
-```
+- Create `pyproject.toml`
+
+  ```sh
+  poetry init
+  ```
+
+- Or create a peotry project
+
+  ```sh
+  poetry new project_name
+  ```
+
+- Create virual environment (*env will be create in cache directory*)
+
+  ```sh
+  poetry install
+  ```
+
+- To create virtual environment withing project directory
+
+  ```sh
+  poetry config virtualenvs.in-project true
+  ```
+
+  Then
+
+  ```sh
+  poetry install
+  ```
+
+- To add a package
+
+  ```sh
+  poetry add requests
+  ```
 
 [⬆️ Go to Context](#context)
 
