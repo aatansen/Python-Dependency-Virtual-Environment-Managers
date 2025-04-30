@@ -206,10 +206,16 @@ pip install poetry
   poetry install
   ```
 
-- To add a package
+- Add a package
 
   ```sh
   poetry add requests
+  ```
+
+- Remove a package
+
+  ```sh
+  poetry remove flask
   ```
 
 [⬆️ Go to Context](#context)
@@ -220,6 +226,42 @@ pip install poetry
 
   ```sh
   poetry show
+  ```
+
+- Show details of a specific package
+
+  ```sh
+  poetry show flask
+  ```
+
+- Update all dependencies
+
+  ```sh
+  poetry update
+  ```
+
+- Lock dependencies (generate/update poetry.lock)
+
+  ```sh
+  poetry lock
+  ```
+
+- Run command inside the virtual environment
+
+  ```sh
+  poetry run python new.py
+  ```
+
+- List all virtual environments
+
+  ```sh
+  poetry env list
+  ```
+
+- Check for dependency issues
+
+  ```sh
+  poetry check
   ```
 
 [⬆️ Go to Context](#context)

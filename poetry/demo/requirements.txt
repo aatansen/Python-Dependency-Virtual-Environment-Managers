@@ -1,0 +1,1 @@
+-e git+https://github.com/aatansen/Python-Dependency-Virtual-Environment-Managers.git@4846275d239b4adc772334713ddc3a633a5d01f3#egg=demo&subdirectory=poetry\demo
