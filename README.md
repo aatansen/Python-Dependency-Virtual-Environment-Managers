@@ -120,6 +120,15 @@
   uv tree
   ```
 
+- Use pip command in uv environment by installing seed packages (one or more of: pip, setuptools, and wheel) into the virtual environment.
+
+  ```sh
+  uv venv --seed
+  ```
+
+- > ModuleNotFoundError: No module named 'distutils'
+- > `pip install setuptools` will solve this error
+
 [⬆️ Go to Context](#context)
 
 #### Minimal `requirements.txt`
