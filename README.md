@@ -14,7 +14,8 @@
       - [Poetry Installation](#poetry-installation)
       - [Poetry Usage](#poetry-usage)
       - [More Poetry Commands](#more-poetry-commands)
-    - [**pyenv-virtualenv**](#pyenv-virtualenv)
+    - [**pyenv**](#pyenv)
+      - [pyenv Installation](#pyenv-installation)
     - [**pipx**](#pipx)
   - [**Mid-Tier (Popular \& Well-Supported)**](#mid-tier-popular--well-supported)
     - [**pip + venv**](#pip--venv)
@@ -275,9 +276,42 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-### **pyenv-virtualenv**
+### **[pyenv](https://github.com/pyenv-win/pyenv-win)**
 
 - Best for managing multiple Python versions and virtual environments.
+
+[⬆️ Go to Context](#context)
+
+#### pyenv Installation
+
+- [Using pip](https://github.com/pyenv-win/pyenv-win/blob/master/docs/installation.md#python-pip)
+
+  ```sh
+  pip install pyenv-win --target %USERPROFILE%\\.pyenv
+  ```
+
+- If you run into an error with the above command use the following instead ([#303](https://github.com/pyenv-win/pyenv-win/issues/303)):
+
+  ```sh
+  pip install pyenv-win --target %USERPROFILE%\\.pyenv --no-user --upgrade
+  ```
+
+- Setup Windows environment variable
+
+  | Variable   | Value                            |
+  | ---------- | -------------------------------- |
+  | PYENV      | C:\Users\my_pc\.pyenv\pyenv-win\ |
+  | PYENV_HOME | C:\Users\my_pc\.pyenv\pyenv-win\ |
+  | PYENV_ROOT | C:\Users\my_pc\.pyenv\pyenv-win\ |
+
+- And add two more lines to user variable Path
+
+  ```sh
+  C:\Users\my_pc\.pyenv\pyenv-win\bin
+  C:\Users\my_pc\.pyenv\pyenv-win\shims
+  ```
+
+- Restart cmd or run `RefreshEnv.cmd` command provided by `Chocolatey`
 
 [⬆️ Go to Context](#context)
 
