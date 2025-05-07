@@ -16,6 +16,7 @@
       - [More Poetry Commands](#more-poetry-commands)
     - [**pyenv**](#pyenv)
       - [pyenv Installation](#pyenv-installation)
+      - [pyenv Usage](#pyenv-usage)
     - [**pipx**](#pipx)
   - [**Mid-Tier (Popular \& Well-Supported)**](#mid-tier-popular--well-supported)
     - [**pip + venv**](#pip--venv)
@@ -312,6 +313,54 @@ pip install poetry
   ```
 
 - Restart cmd or run `RefreshEnv.cmd` command provided by `Chocolatey`
+
+[⬆️ Go to Context](#context)
+
+#### pyenv Usage
+
+- Get list of available python version
+
+  ```sh
+  pyenv install -l
+  ```
+
+- Installing a python version
+
+  ```sh
+  pyenv install 3.10.5
+  ```
+
+- Uninstalling a python version
+
+  ```sh
+  pyenv uninstall 3.10.5
+  ```
+
+- Set python
+
+  ```sh
+  pyenv global 3.10
+  ```
+
+- Select just for current shell session
+
+  ```sh
+  pyenv shell 3.10.5
+  ```
+
+- Multiple Python versions at the same time by specifying multiple arguments
+
+  ```sh
+  pyenv global 3.11 3.12
+  ```
+
+- pyenv update python version
+
+  ```sh
+  pyenv update
+  ```
+
+
 
 [⬆️ Go to Context](#context)
 
