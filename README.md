@@ -18,6 +18,9 @@
       - [pyenv Installation](#pyenv-installation)
       - [pyenv Usage](#pyenv-usage)
     - [**pipx**](#pipx)
+      - [pipx Installation](#pipx-installation)
+      - [pipx Usage](#pipx-usage)
+      - [CLI tools to try in pipx](#cli-tools-to-try-in-pipx)
   - [**Mid-Tier (Popular \& Well-Supported)**](#mid-tier-popular--well-supported)
     - [**pip + venv**](#pip--venv)
     - [**conda**](#conda)
@@ -360,13 +363,92 @@ pip install poetry
   pyenv update
   ```
 
+[⬆️ Go to Context](#context)
 
+### **[pipx](https://github.com/pypa/pipx)**
+
+- Best for installing standalone CLI tools globally in isolated environments.
 
 [⬆️ Go to Context](#context)
 
-### **pipx**
+#### pipx Installation
 
-- Best for installing standalone CLI tools globally in isolated environments.
+- Installing using pip
+
+  ```sh
+  python -m pip install --user pipx
+  ```
+
+- Warning solution
+
+  ```log
+  WARNING: The scripts activate-global-python-argcomplete.exe, python-argcomplete-check-easy-install-script.exe and register-python-argcomplete.exe are installed in 'C:\Users\Admin\AppData\Roaming\Python\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script userpath.exe is installed in 'C:\Users\Admin\AppData\Roaming\Python\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script pipx.exe is installed in 'C:\Users\Admin\AppData\Roaming\Python\Python312\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  ```
+
+- Go to mentioned path `C:\Users\Admin\AppData\Roaming\Python\Python312\Scripts`
+- Open cmd on that path and run
+
+  ```sh
+  .\pipx.exe ensurepath
+  ```
+
+#### pipx Usage
+
+- Installing Package
+
+  ```sh
+  pipx install pycowsay
+  ```
+
+- Uninstalling Package
+
+  ```sh
+  pipx uninstall pycowsay
+  ```
+
+- Inject a package (when required additional packages)
+
+  ```sh
+  pipx inject ipython matplotlib
+  ```
+
+- Injecting multiple packages
+
+  ```sh
+  pipx inject ipython matplotlib pandas
+  # or:
+  pipx inject ipython -r useful-packages.txt
+  ```
+
+[⬆️ Go to Context](#context)
+
+#### CLI tools to try in pipx
+
+| Tool           | Purpose                  | Use Case                                            |
+| -------------- | ------------------------ | --------------------------------------------------- |
+| `httpie`       | HTTP client              | User-friendly `curl` alternative for APIs           |
+| `black`        | Code formatter           | Opinionated Python formatter (fast + safe)          |
+| `ruff`         | Linter + Formatter       | All-in-one linting (super fast, written in Rust)    |
+| `poetry`       | Package manager          | Modern dependency management + publishing           |
+| `pipenv`       | Package manager          | Dependency locking + venv in one                    |
+| `cookiecutter` | Project scaffolding      | Generate project boilerplates                       |
+| `rich-cli`     | Pretty CLI output        | Render JSON, markdown, syntax-highlighted code      |
+| `glances`      | System monitor           | Real-time system resource viewer (cross-platform)   |
+| `pgcli`        | PostgreSQL client        | Auto-complete + syntax highlighting in terminal     |
+| `bpython`      | Python REPL              | Fancy REPL with autocomplete & docs                 |
+| `ipython`      | Advanced REPL            | Interactive dev console with magic commands         |
+| `howdoi`       | Quick answers            | Searches StackOverflow from terminal                |
+| `doit`         | Task runner              | Better alternative to Makefiles for Python projects |
+| `pdm`          | Next-gen package manager | PEP 582 support (no venv needed)                    |
+| `xonsh`        | Shell + Python           | Shell with full Python power                        |
+| `yt-dlp`       | YouTube downloader       | Download and convert videos via CLI                 |
+
+[⬆️ Go to Context](#context)
 
 ## **Mid-Tier (Popular & Well-Supported)**
 
