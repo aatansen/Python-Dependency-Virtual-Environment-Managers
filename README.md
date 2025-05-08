@@ -5,10 +5,10 @@
 # **Context**
 - [**Context**](#context)
   - [**Top-Tier (Most Versatile \& Recommended)**](#top-tier-most-versatile--recommended)
-    - [**UV**](#uv)
-      - [UV Installation](#uv-installation)
-      - [UV Usage](#uv-usage)
-      - [More UV Commands](#more-uv-commands)
+    - [**uv**](#uv)
+      - [uv Installation](#uv-installation)
+      - [uv Usage](#uv-usage)
+      - [More uv Commands](#more-uv-commands)
       - [Minimal `requirements.txt`](#minimal-requirementstxt)
     - [**poetry**](#poetry)
       - [Poetry Installation](#poetry-installation)
@@ -30,13 +30,13 @@
 
 ## **Top-Tier (Most Versatile & Recommended)**
 
-### **UV**
+### **[uv](https://github.com/astral-sh/uv)**
 
 - Fastest package installer and virtual environment manager.
 
 [⬆️ Go to Context](#context)
 
-#### UV Installation
+#### uv Installation
 
 - Using [`pip`](https://pypi.org/project/uv/)
 
@@ -54,7 +54,7 @@
 
 [⬆️ Go to Context](#context)
 
-#### UV Usage
+#### uv Usage
 
   ```sh
   uv venv   # Creates a .venv in the current directory
@@ -65,7 +65,7 @@
   uv run app.py # to run py file
   ```
 
-#### More UV Commands
+#### More uv Commands
 
 - Sync environment exactly to a requirements file (*installs missing, removes extra*)
 
@@ -167,7 +167,7 @@
 
 [⬆️ Go to Context](#context)
 
-### **poetry**
+### **[poetry](https://github.com/python-poetry/poetry)**
 
 - Full-fledged dependency and package manager.
 
