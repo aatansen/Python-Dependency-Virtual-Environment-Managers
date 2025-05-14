@@ -23,6 +23,9 @@
       - [CLI tools to try in pipx](#cli-tools-to-try-in-pipx)
   - [**Mid-Tier (Popular \& Well-Supported)**](#mid-tier-popular--well-supported)
     - [**pip + venv**](#pip--venv)
+      - [pip Installation](#pip-installation)
+      - [pip Usage](#pip-usage)
+      - [venv Usage](#venv-usage)
     - [**conda**](#conda)
     - [**hatch**](#hatch)
     - [**virtualenv**](#virtualenv)
@@ -455,6 +458,106 @@ pip install poetry
 ### **pip + venv**
 
 - Default, lightweight, and comes with Python.
+
+[⬆️ Go to Context](#context)
+
+#### pip Installation
+
+- It is installed by default with Python >= 3.4
+
+- Update pip
+
+  ```sh
+  python -m pip install pip --upgrade
+  ```
+
+[⬆️ Go to Context](#context)
+
+#### pip Usage
+
+- Installing a package
+
+  ```sh
+  pip install <package-name>
+  ```
+
+- Installing specific version
+
+  ```sh
+  pip install <package-name>==<version>
+  ```
+
+- Installing from a requirements file
+
+  ```sh
+  pip install -r requirements.txt
+  ```
+
+- Saving current packages to a requirements file
+
+  ```sh
+  pip freeze > requirements.txt
+  ```
+
+- Updating multiple packages
+
+  ```sh
+  pip install -r requirements.txt --upgrade
+  ```
+
+- Uninstalling a package
+
+  ```sh
+  pip uninstall <package-name>
+  ```
+
+- Listing installed packages
+
+  ```sh
+  pip list
+  ```
+
+- Checking outdated packages
+
+  ```sh
+  pip list --outdated
+  ```
+
+- Showing info about a package
+
+  ```sh
+  pip show <package-name>
+  ```
+
+[⬆️ Go to Context](#context)
+
+#### venv Usage
+
+- Creating a virtual environment
+
+  ```sh
+  py -m venv env
+  ```
+
+- Activating the virtual environment
+
+  ```sh
+  env\Scripts\activate
+  ```
+
+- Deactivating the virtual environment
+
+  ```sh
+  deactivate
+  ```
+
+- Deleting a virtual environment
+
+  ```sh
+  rd /s /q env
+  ```
+
+[⬆️ Go to Context](#context)
 
 ### **conda**
 
