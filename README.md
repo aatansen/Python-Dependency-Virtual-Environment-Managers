@@ -27,6 +27,8 @@
       - [pip Usage](#pip-usage)
       - [venv Usage](#venv-usage)
     - [**conda**](#conda)
+      - [conda Installation](#conda-installation)
+      - [conda Usage](#conda-usage)
     - [**hatch**](#hatch)
     - [**virtualenv**](#virtualenv)
   - [**Lower-Tier (Less Commonly Used)**](#lower-tier-less-commonly-used)
@@ -561,7 +563,35 @@ pip install poetry
 
 ### **conda**
 
-- Ideal for data science and scientific computing.
+- Ideal for data science and scientific computing. It manages packages, environments, and dependencies effectively across platforms.
+
+#### conda Installation
+
+- Download [Miniconda](https://repo.anaconda.com/miniconda/) (lightweight) or [Anaconda](https://www.anaconda.com/download) (includes many pre-installed packages) and install
+
+#### conda Usage
+
+| Task                      | Command                                 |
+| ------------------------- | --------------------------------------- |
+| Env in miniconda envs path| `conda create -n myenv python=3.11`     |
+| Env in current path       | `conda create -p myenv python=3.11`     |
+| Activate environment      | `conda activate myenv`                  |
+| Deactivate environment    | `conda deactivate`                      |
+| List all environments     | `conda env list` or `conda info --envs` |
+| Install package           | `conda install numpy`                   |
+| Install specific version  | `conda install pandas=1.5.3`            |
+| Remove package            | `conda remove package_name`             |
+| Update package            | `conda update scipy`                    |
+| Update all package        | `conda update --all`                    |
+| Export environment        | `conda env export > environment.yml`    |
+| Recreate env from file    | `conda env create -f environment.yml`   |
+| Delete environment        | `conda remove --name myenv --all`       |
+
+> [!NOTE]
+>
+> - Prefer `conda install` when available to avoid dependency conflicts.
+>
+> - Use `pip install` within a conda environment if a package isn't available via conda.
 
 ### **hatch**
 
