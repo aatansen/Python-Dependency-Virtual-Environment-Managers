@@ -457,7 +457,7 @@ pip install poetry
 
 ## **Mid-Tier (Popular & Well-Supported)**
 
-### **pip + venv**
+### **[pip + venv](https://github.com/pypa/pip)**
 
 - Default, lightweight, and comes with Python.
 
@@ -561,7 +561,7 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-### **conda**
+### **[conda](https://anaconda.org/anaconda/conda)**
 
 - Ideal for data science and scientific computing. It manages packages, environments, and dependencies effectively across platforms.
 
