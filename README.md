@@ -30,6 +30,8 @@
       - [conda Installation](#conda-installation)
       - [conda Usage](#conda-usage)
     - [**hatch**](#hatch)
+      - [hatch Installation](#hatch-installation)
+      - [hatch Usages](#hatch-usages)
     - [**virtualenv**](#virtualenv)
   - [**Lower-Tier (Less Commonly Used)**](#lower-tier-less-commonly-used)
     - [**asdf**](#asdf)
@@ -565,9 +567,13 @@ pip install poetry
 
 - Ideal for data science and scientific computing. It manages packages, environments, and dependencies effectively across platforms.
 
+[⬆️ Go to Context](#context)
+
 #### conda Installation
 
 - Download [Miniconda](https://repo.anaconda.com/miniconda/) (lightweight) or [Anaconda](https://www.anaconda.com/download) (includes many pre-installed packages) and install
+
+[⬆️ Go to Context](#context)
 
 #### conda Usage
 
@@ -593,9 +599,28 @@ pip install poetry
 >
 > - Use `pip install` within a conda environment if a package isn't available via conda.
 
-### **hatch**
+[⬆️ Go to Context](#context)
+
+### **[hatch](https://github.com/pypa/hatch)**
 
 - Modern package and virtual environment manager.
+
+[⬆️ Go to Context](#context)
+
+#### hatch Installation
+
+- Installer
+  - [Download](https://github.com/pypa/hatch/releases/latest/download/hatch-x64.msi) and install
+- Using pipx
+  - `pipx install hatch`
+
+[⬆️ Go to Context](#context)
+
+#### hatch Usages
+
+
+
+[⬆️ Go to Context](#context)
 
 ### **virtualenv**
 
