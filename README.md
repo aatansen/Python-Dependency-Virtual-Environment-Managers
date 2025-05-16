@@ -618,7 +618,23 @@ pip install poetry
 
 #### hatch Usages
 
+- Create hatch project
 
+  ```sh
+  hatch new hatch-project
+  ```
+
+- Create environment
+
+  ```sh
+  hatch env create
+  ```
+
+- Create environment
+
+  ```sh
+  hatch env create
+  ```
 
 [⬆️ Go to Context](#context)
 
