@@ -33,6 +33,8 @@
       - [hatch Installation](#hatch-installation)
       - [hatch Usage](#hatch-usage)
     - [**virtualenv**](#virtualenv)
+      - [virtualenv Installation](#virtualenv-installation)
+      - [virtualenv Usage](#virtualenv-usage)
   - [**Lower-Tier (Less Commonly Used)**](#lower-tier-less-commonly-used)
     - [**asdf**](#asdf)
     - [**virtualenvwrapper**](#virtualenvwrapper)
@@ -666,12 +668,43 @@ pip install poetry
   hatch version minor # patch, minor, major
   ```
 
-
 [⬆️ Go to Context](#context)
 
 ### **virtualenv**
 
 - Alternative to `venv` with more features.
+
+[⬆️ Go to Context](#context)
+
+#### virtualenv Installation
+
+- Using pipx
+
+  ```sh
+  pipx install virtualenv
+  ```
+
+#### virtualenv Usage
+
+- Creating env
+
+  ```sh
+  virtualenv env
+  ```
+
+- Activating env
+
+  ```sh
+  env\Scripts\activate
+  ```
+
+- Deactivate env
+
+  ```sh
+  deactivate
+  ```
+
+[⬆️ Go to Context](#context)
 
 ## **Lower-Tier (Less Commonly Used)**
 
