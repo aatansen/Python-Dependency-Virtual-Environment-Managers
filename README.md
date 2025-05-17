@@ -11,9 +11,9 @@
       - [More uv Commands](#more-uv-commands)
       - [Minimal `requirements.txt`](#minimal-requirementstxt)
     - [**poetry**](#poetry)
-      - [Poetry Installation](#poetry-installation)
-      - [Poetry Usage](#poetry-usage)
-      - [More Poetry Commands](#more-poetry-commands)
+      - [poetry Installation](#poetry-installation)
+      - [poetry Usage](#poetry-usage)
+      - [More poetry Commands](#more-poetry-commands)
     - [**pyenv**](#pyenv)
       - [pyenv Installation](#pyenv-installation)
       - [pyenv Usage](#pyenv-usage)
@@ -31,7 +31,7 @@
       - [conda Usage](#conda-usage)
     - [**hatch**](#hatch)
       - [hatch Installation](#hatch-installation)
-      - [hatch Usages](#hatch-usages)
+      - [hatch Usage](#hatch-usage)
     - [**virtualenv**](#virtualenv)
   - [**Lower-Tier (Less Commonly Used)**](#lower-tier-less-commonly-used)
     - [**asdf**](#asdf)
@@ -181,7 +181,7 @@
 
 - Full-fledged dependency and package manager.
 
-#### Poetry Installation
+#### poetry Installation
 
 ```sh
 curl -sSL https://install.python-poetry.org | python3 -
@@ -195,7 +195,7 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-#### Poetry Usage
+#### poetry Usage
 
 - Create `pyproject.toml`
 
@@ -241,7 +241,7 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-#### More Poetry Commands
+#### More poetry Commands
 
 - Show install packages
 
@@ -616,7 +616,7 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-#### hatch Usages
+#### hatch Usage
 
 - Create hatch project
 
@@ -630,11 +630,42 @@ pip install poetry
   hatch env create
   ```
 
-- Create environment
+- Activate and use the environment
 
   ```sh
-  hatch env create
+  hatch shell
   ```
+
+- Exit from environment
+
+  ```sh
+  exit
+  ```
+
+- Remove environment
+
+  ```sh
+  hatch env prune
+  ```
+
+- View list of environment
+
+  ```sh
+  hatch env show
+  ```
+
+- Project version check
+
+  ```sh
+  hatch version
+  ```
+
+- Change project version
+
+  ```sh
+  hatch version minor # patch, minor, major
+  ```
+
 
 [⬆️ Go to Context](#context)
 
