@@ -38,7 +38,11 @@
   - [**Lower-Tier (Less Commonly Used)**](#lower-tier-less-commonly-used)
     - [**asdf**](#asdf)
     - [**virtualenvwrapper**](#virtualenvwrapper)
+      - [virtualenvwrapper Installation](#virtualenvwrapper-installation)
+      - [virtualenvwrapper Usage](#virtualenvwrapper-usage)
     - [**flit**](#flit)
+      - [flit Installation](#flit-installation)
+      - [flit Usage](#flit-usage)
 
 ## **Top-Tier (Most Versatile & Recommended)**
 
@@ -670,7 +674,7 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-### **virtualenv**
+### **[virtualenv](https://github.com/pypa/virtualenv)**
 
 - Alternative to `venv` with more features.
 
@@ -708,14 +712,78 @@ pip install poetry
 
 ## **Lower-Tier (Less Commonly Used)**
 
-### **asdf**
+### **[asdf](https://github.com/asdf-vm/asdf)**
 
 - Universal version manager supporting Python and other languages.
 
-### **virtualenvwrapper**
+[⬆️ Go to Context](#context)
+
+### **[virtualenvwrapper](https://github.com/davidmarble/virtualenvwrapper-win)**
 
 - Helper for managing `virtualenv` environments easily.
 
-### **flit**
+[⬆️ Go to Context](#context)
+
+#### virtualenvwrapper Installation
+
+- Using `pipx`
+
+  ```sh
+  pipx install virtualenvwrapper-win
+  ```
+
+[⬆️ Go to Context](#context)
+
+#### virtualenvwrapper Usage
+
+| Purpose                                            | Command                         |
+| -------------------------------------------------- | ------------------------------- |
+| Create & activate a new virtualenv                 | `mkvirtualenv myenv`            |
+| List or activate virtualenvs                       | `workon myenv`                  |
+| Delete a virtualenv                                | `rmvirtualenv myenv`            |
+| Go to the directory of the current env             | `cdvirtualenv`                  |
+| Go to `site-packages` of current env               | `cdsitepackages`                |
+| List packages installed in current env             | `lssitepackages`                |
+| List all virtualenvs                               | `lsvirtualenv`                  |
+| Add folders to `PYTHONPATH` of active env          | `add2virtualenv path\to\folder` |
+| Allow/disallow global packages in current env      | `toggleglobalsitepackages`      |
+| Create a project directory and virtualenv          | `mkproject myproject`           |
+| Go to the directory of the current project         | `cdproject`                     |
+| Link a project directory to the current virtualenv | `setprojectdir D:\myproject`    |
+| Used internally for deletion                       | `folder_delete D:\Env\myenv`    |
+| Locate the current virtualenv's base directory     | `whereis`                       |
+| Lists env variables for the current env            | `vwenv`                         |
+
+[⬆️ Go to Context](#context)
+
+### **[flit](https://github.com/pypa/flit)**
 
 - Minimalistic package builder and publisher.
+
+[⬆️ Go to Context](#context)
+
+#### flit Installation
+
+- Using `pipx`
+
+  ```sh
+  pipx install flit
+  ```
+
+[⬆️ Go to Context](#context)
+
+#### flit Usage
+
+- Initial project
+
+  ```sh
+  flit init
+  ```
+
+- Publish package to PyPI
+
+  ```sh
+  flit publish
+  ```
+
+[⬆️ Go to Context](#context)
