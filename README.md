@@ -21,6 +21,9 @@
       - [pipx Installation](#pipx-installation)
       - [pipx Usage](#pipx-usage)
       - [CLI tools to try in pipx](#cli-tools-to-try-in-pipx)
+    - [**pixi**](#pixi)
+      - [pixi Installation](#pixi-installation)
+      - [pixi Usage](#pixi-usage)
   - [**Mid-Tier (Popular \& Well-Supported)**](#mid-tier-popular--well-supported)
     - [**pip + venv**](#pip--venv)
       - [pip Installation](#pip-installation)
@@ -460,6 +463,60 @@ pip install poetry
 | `pdm`          | Next-gen package manager | PEP 582 support (no venv needed)                    |
 | `xonsh`        | Shell + Python           | Shell with full Python power                        |
 | `yt-dlp`       | YouTube downloader       | Download and convert videos via CLI                 |
+
+[⬆️ Go to Context](#context)
+
+### [**pixi**](https://github.com/prefix-dev/pixi)
+
+- It is a fast, multi-language package and environment manager built on top of the Conda ecosystem.
+
+#### pixi Installation
+
+- Run the powershell command
+
+  ```sh
+  powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"
+  ```
+
+[⬆️ Go to Context](#context)
+
+#### pixi Usage
+
+- Initial pixi
+
+  ```sh
+  pixi init
+  ```
+
+- Create environment
+
+  ```sh
+  pixi install
+  ```
+
+- Add package (when package not available in **conda channels** `--pypi` is used)
+
+  ```sh
+  pixi add django --pypi
+  ```
+
+- Remove package
+
+  ```sh
+  pixi remove django --pypi
+  ```
+
+- Remove pixi environment
+
+  ```sh
+  pixi clean
+  ```
+
+- List all install packages
+
+  ```sh
+  pixi list
+  ```
 
 [⬆️ Go to Context](#context)
 

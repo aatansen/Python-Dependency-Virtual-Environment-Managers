@@ -1,0 +1,10 @@
+[workspace]
+authors = ["Md. Alahi Almin Tansen <aatansen@gmail.com>"]
+channels = ["conda-forge"]
+name = "pixi-project"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
