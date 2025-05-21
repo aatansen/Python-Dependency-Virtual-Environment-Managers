@@ -84,6 +84,8 @@
   uv run app.py # to run py file
   ```
 
+[⬆️ Go to Context](#context)
+
 #### More uv Commands
 
 - Sync environment exactly to a requirements file (*installs missing, removes extra*)
@@ -189,6 +191,8 @@
 ### **[poetry](https://github.com/python-poetry/poetry)**
 
 - Full-fledged dependency and package manager.
+
+[⬆️ Go to Context](#context)
 
 #### poetry Installation
 
@@ -413,6 +417,8 @@ pip install poetry
   .\pipx.exe ensurepath
   ```
 
+[⬆️ Go to Context](#context)
+
 #### pipx Usage
 
 - Installing Package
@@ -466,7 +472,7 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-### [**pixi**](https://github.com/prefix-dev/pixi)
+### **[pixi](https://github.com/prefix-dev/pixi)**
 
 - It is a fast, multi-language package and environment manager built on top of the Conda ecosystem.
 
@@ -744,6 +750,8 @@ pip install poetry
   ```sh
   pipx install virtualenv
   ```
+
+[⬆️ Go to Context](#context)
 
 #### virtualenv Usage
 
