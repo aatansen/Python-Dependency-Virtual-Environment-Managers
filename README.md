@@ -29,9 +29,10 @@
       - [pip Installation](#pip-installation)
       - [pip Usage](#pip-usage)
       - [venv Usage](#venv-usage)
-    - [**conda**](#conda)
-      - [conda Installation](#conda-installation)
+    - [**Miniforge3 (conda/mamba)**](#miniforge3-condamamba)
+      - [conda](#conda)
       - [conda Usage](#conda-usage)
+      - [mamba](#mamba)
     - [**hatch**](#hatch)
       - [hatch Installation](#hatch-installation)
       - [hatch Usage](#hatch-usage)
@@ -632,17 +633,14 @@ pip install poetry
 
 [⬆️ Go to Context](#context)
 
-### **[conda](https://anaconda.org/anaconda/conda)**
+### [**Miniforge3 (conda/mamba)**](https://github.com/conda-forge/miniforge)
+
+- It is a minimal, community-driven Conda distribution that includes both the `conda` and `mamba` package managers, with the `conda-forge` channel set as the default source for packages.
+
+#### [conda](https://anaconda.org/anaconda/conda)
 
 - Ideal for data science and scientific computing. It manages packages, environments, and dependencies effectively across platforms.
-
-[⬆️ Go to Context](#context)
-
-#### conda Installation
-
-- Download [Miniconda](https://repo.anaconda.com/miniconda/) (lightweight) or [Anaconda](https://www.anaconda.com/download) (includes many pre-installed packages) and install
-
-[⬆️ Go to Context](#context)
+- Since it is included with Miniforge3, there is no need to install it separately. However, if needed, download and install [Miniconda](https://repo.anaconda.com/miniconda/) (a lightweight Conda distribution) or [Anaconda](https://www.anaconda.com/download) (which includes many pre-installed packages).
 
 #### conda Usage
 
@@ -667,6 +665,14 @@ pip install poetry
 > - Prefer `conda install` when available to avoid dependency conflicts.
 >
 > - Use `pip install` within a conda environment if a package isn't available via conda.
+
+[⬆️ Go to Context](#context)
+
+#### [mamba](https://github.com/mamba-org/mamba)
+
+- It is a fast, drop-in replacement for `conda` written in C++
+- It is included by default in `Miniforge` versions `23.3.1-0` and above.
+- All commands are compatible with `conda`, so simply replacing conda with `mamba` will work seamlessly.
 
 [⬆️ Go to Context](#context)
 
