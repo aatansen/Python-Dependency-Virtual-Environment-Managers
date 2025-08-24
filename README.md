@@ -181,6 +181,12 @@
   pipdeptree --warn silence | grep -E "^[a-zA-Z0-9]" | awk '{print $1}' > requirements.txt
   ```
 
+  or
+
+  ```sh
+  pipdeptree --warn silence | findstr "^[a-zA-Z]" > requirements.txt
+  ```
+
 - Combined exclude and minimal command
 
   ```sh
