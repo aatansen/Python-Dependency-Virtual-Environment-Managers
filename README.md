@@ -89,6 +89,12 @@
 
 #### More uv Commands
 
+- Activate environment
+
+  ```sh
+  .venv\Scripts\activate
+  ```
+
 - Sync environment exactly to a requirements file (*installs missing, removes extra*)
 
   ```sh
