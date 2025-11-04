@@ -513,6 +513,12 @@ pip install poetry
   pixi install
   ```
 
+- Add package
+
+  ```sh
+  pixi add 'python>=3.13.0,<3.14' jupyterlab
+  ```
+
 - Add package (when package not available in **conda channels** `--pypi` is used)
 
   ```sh
@@ -535,6 +541,25 @@ pip install poetry
 
   ```sh
   pixi list
+  ```
+
+- Activate environment shell
+
+  ```sh
+  pixi shell
+  ```
+
+- Exit environment shell
+
+  ```sh
+  exit
+  ```
+
+- Run command
+
+  ```sh
+  pixi run python --version
+  pixi run jupyter lab
   ```
 
 [⬆️ Go to Context](#context)
