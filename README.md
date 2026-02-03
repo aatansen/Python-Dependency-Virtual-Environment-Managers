@@ -525,6 +525,37 @@ pip install poetry
   pixi add django --pypi
   ```
 
+- Add packages from `requirements.txt`
+  - Create a file `add_to_pixi.cmd`
+
+    ```cmd
+    @echo off
+    REM -----------------------------
+    REM Install packages from requirements.txt using Pixi
+    REM Automatically adds --pypi if default install fails
+    REM -----------------------------
+
+    SETLOCAL ENABLEDELAYEDEXPANSION
+    SET "FILE=requirements.txt"
+
+    FOR /F "usebackq delims=" %%A IN ("%FILE%") DO (
+        REM Get package name without version
+        FOR /F "tokens=1 delims==" %%B IN ("%%A") DO (
+            echo Installing %%B...
+            pixi add %%B
+            IF !ERRORLEVEL! NEQ 0 (
+                echo "Failed to install %%B via default, trying with --pypi..."
+                pixi add %%B --pypi
+            )
+        )
+    )
+
+    echo All packages processed!
+    pause
+    ```
+
+  - Now run `add_to_pixi.cmd`
+
 - Remove package
 
   ```sh
