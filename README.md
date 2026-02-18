@@ -101,6 +101,33 @@
   uv pip sync requirements.txt
   ```
 
+- Export to `requirements.txt`
+
+  ```sh
+  uv export --format requirements-txt --no-hashes --no-annotate > requirements.txt
+  ```
+
+- Adding packages to uv from `requirements.txt`
+
+  ```sh
+  uv init
+  uv add -r requirements.txt
+  ```
+
+- Upgrade packages
+
+  ```sh
+  uv lock --upgrade-package requests
+  ```
+
+  or all packages
+
+  ```sh
+  uv lock --upgrade
+  ```
+
+  - Now run `uv sync`
+
 - Initialize a new project (*creates `pyproject.toml`*)
 
   ```sh
@@ -135,13 +162,6 @@
 
   ```sh
   uv sync
-  ```
-
-- Converting `requirements.txt` to `pyproject.toml`
-
-  ```sh
-  uv init
-  uv add -r requirements.txt
   ```
 
 - Display Dependency Tree
@@ -197,6 +217,12 @@
 
   ```sh
   pipdeptree --exclude pip,pipdeptree,setuptools,wheel,build,packaging,pyproject_hooks  --warn silence | grep -E "^[a-zA-Z0-9]" | awk '{print $1}' > requirements.txt
+  ```
+
+- Upgrade package version in `requirements.txt` using [pur](https://pypi.org/project/pur/)
+
+  ```sh
+  pur -r requirements.txt
   ```
 
 [⬆️ Go to Context](#context)
